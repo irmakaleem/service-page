@@ -1,0 +1,144 @@
+/* Modals */
+button[data-modal-target] {
+  padding: 15px 25px;
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+
+.modal {
+  font-family: var(--font-family);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal.modal-show {
+  animation: fadeIn 0.1s ease-in-out forwards;
+}
+.modal.modal-hide {
+  animation: fadeOut 0.1s ease-in-out 0.1s forwards;
+}
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.modal.modal-show .modal-content {
+  animation: fadeInDown 0.3s ease-in-out forwards;
+}
+.modal.modal-hide .modal-content {
+  animation: fadeOutUp 0.2s ease-in-out forwards;
+}
+.modal-content .modal-heading {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #3b1d82;
+  font-size: clamp(1.3rem, -0.2rem + 4.8vw, 2.5rem);
+}
+
+.modal .modal-heading img {
+  width: 100%;
+}
+
+.modal-content .modal-text,
+.modal-list {
+  font-size: clamp(0.3875rem, 0.3789rem + 1vw, 1.1125rem);
+}
+
+.modal-content .modal-text {
+  margin: 1rem 0;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.modal-content .modal-text a {
+  text-decoration: underline;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  right: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 0 0.75rem;
+  color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  user-select: none;
+}
+.modal-close:hover,
+.modal-close:focus {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.modal-show {
+  animation: none;
+}
+.modal.modal-hide {
+  animation: none;
+}
+.modal.modal-show .modal-content {
+  animation: zoomIn 0.3s ease-in-out forwards;
+}
+.modal.modal-hide .modal-content {
+  animation: zoomOut 0.2s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  .modal-content {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+  .modal-content {
+    padding: 2rem 1rem 1rem 1rem;
+    width: 90%;
+  }
+  .modal-content h1 {
+    margin-bottom: 1.5rem;
+  }
+  .modal .modal-content {
+    padding: 2rem 3rem;
+  }
+}

@@ -1,0 +1,253 @@
+.carousel-container {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0px;
+  z-index: -1;
+}
+
+.slider-container {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  height: 100%;
+}
+
+.left-slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-1 {
+  background-color: #353b48;
+}
+.slide-2 {
+  background-color: #be2edd;
+}
+.slide-3 {
+  background-color: #0a8f28;
+}
+.slide-4 {
+  background-color: #b21919;
+}
+.slide-5 {
+  background-color: #1616b4;
+}
+
+.left-slides > .slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-slides div h3 {
+  font-size: clamp(0.8875rem, 0.5rem + 2vw, 2.3rem);
+  margin-bottom: 10px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.left-slides div p {
+  font-size: clamp(0.6875rem, 0.5195rem + 0.8673vw, 1.3rem);
+  padding: 0px 60px;
+}
+
+.right-slides {
+  position: absolute;
+  left: 35%;
+  top: 0;
+  width: 65%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.right-slides > div {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.right-slides > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider-nav-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 65%;
+  z-index: 100;
+  cursor: pointer;
+  float: right;
+}
+
+.slider-nav-btns > a {
+  z-index: 1000;
+  margin-inline: 20px;
+  background: white;
+  border-radius: 10em;
+  box-shadow: 1px 3px 5px grey;
+  cursor: pointer;
+  color: black;
+}
+
+.slider-nav-btns > a:hover {
+  outline: 1px solid white;
+  color: white;
+}
+
+.slider-nav-btns > a::before {
+  background-color: none;
+  border-radius: 10em;
+}
+
+.slider-container .buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  font-size: 1.5rem;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(68, 68, 68, 0);
+}
+
+.buttons button:hover {
+  opacity: 0.9;
+}
+
+.buttons button:focus {
+  outline: none;
+}
+
+.slider-container .right-btn {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width: 1150px) {
+  .left-slides {
+    width: 50%;
+  }
+  .right-slides {
+    left: 50%;
+    width: 50%;
+  }
+  .slider-container button {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-container {
+    height: 80vh;
+    margin: 40px 0px;
+  }
+
+  .right-slides {
+    width: 0;
+  }
+  .left-slides {
+    width: 100%;
+    left: 0;
+  }
+
+  .left-slides > .slide > div {
+    text-align: center;
+  }
+
+  .slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.089);
+  }
+
+  .slide-1 {
+    background: url(/img/banner1.jpg);
+  }
+  .slide-2 {
+    background: url(img/banner2.jpg);
+  }
+  .slide-3 {
+    background: url(img/banner3.jpg);
+  }
+  .slide-4 {
+    background: url(img/banner4.jpg);
+  }
+  .slide-5 {
+    background: url(img/banner5.jpg);
+  }
+
+  .slide-1 div {
+    background-color: #353b48;
+  }
+  .slide-2 div {
+    background-color: #be2edd;
+  }
+  .slide-3 div {
+    background-color: #0a8f28;
+  }
+  .slide-4 div {
+    background-color: #b21919;
+  }
+  .slide-5 div {
+    background-color: #1616b4;
+  }
+
+  .right-slides {
+    display: none;
+  }
+
+  .slider-container .buttons button {
+    top: 90%;
+    font-size: 1rem;
+    padding: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider-nav-btns {
+    display: none;
+  }
+}
+
+.collab-carousel .left-slides {
+  width: 65%;
+}
+
+.collab-carousel .right-slides {
+  width: 65%;
+}

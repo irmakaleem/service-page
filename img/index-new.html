@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Power | PM</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- ico fonts -->
+   <link rel="stylesheet" type="text/css" href="css/xsIcon.css">
+   <link rel="stylesheet" type="text/css" href="css/animate.css">
+   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+   <link rel="stylesheet" type="text/css" href="css/xsIcon.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="icon" href="img/ppm-logo.png" type="image/png" sizes="512x512">
+   
+    <style>
+
+     .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        
+        .sticky + .content {
+          padding-top: 102px;
+        }
+        
+        .homebanner .owl-dots {
+            display: none;
+        }
+        
+        .homebanner .owl-nav button.owl-prev {
+            position: absolute;
+            top: 42%;
+            left: 7%;
+        }
+        .homebanner .owl-nav button.owl-prev>i, .homebanner .owl-nav button.owl-next>i {
+            font-size: 30px;
+            color: #ffffff82;
+            font-weight: 600;
+        }
+        .homebanner .owl-nav button.owl-next {
+            position: absolute;
+            top: 42%;
+            right: 7%;
+        }
+        
+      /*  .homebanner .owl-item img{
+            opacity: .4;
+        }*/
+        .homebanner .owl-item{
+            position: relative;
+        }
+        .homebanner .owl-item::after {
+            content: ' ';
+            position: absolute;
+            width: 100%; 
+            height:100%;
+            top:0; 
+            left:0;
+            background:rgba(0,0,0,0.6);
+        }
+        .contentdiv{
+            position: absolute;
+            top: 42%;
+            width: 100%;
+            z-index: 9;
+            left: auto;
+        }
+        .contentdiv h1{
+            line-height: 1.2;
+        }
+        
+        
+        
+        /*.header.header-transparent .navbar-brand{
+            margin-top: -50px;
+        }
+        .header.header-transparent ul.navbar-nav{
+            margin-top: -30px;
+        }
+        .header.header-transparent ul.navbar-nav li{
+            margin-left: 22px;
+        }*/
+        
+        
+        /*.header.sticky .navbar-brand{
+            margin-top: 0px;
+        }
+        .header.sticky ul.navbar-nav{
+            padding-top: 0px;
+        }
+        .header.sticky ul.navbar-nav li{
+            margin-left: 0px;
+        }*/
+        
+        
+        .videosection {
+            height: 110vh;
+            min-height: 350px;
+        }
+        .home-banner-video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+}
+#overlay-video-bg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.height-100 {
+    height: 100%;
+}
+.videodiv {
+    text-align: -webkit-center;
+}
+.videobannerbtn {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 position: relative;
+	 width: 180px;
+	 height: 180px;
+	 background: #fff;
+	 border: none;
+	 border-radius: 50%;
+	 box-shadow: 10px 10px 33px #6d6d6d;
+	 outline: none;
+     cursor: pointer;
+}
+ .videobannerbtn::before, .videobannerbtn:after {
+	 content: '';
+	 position: absolute;
+	 top: 16%;
+	 left: 16%;
+	 width: 120px;
+	 height: 120px;
+	 border-radius: 50%;
+	 border: 2px solid #fff;
+	 /*filter: blur(2px);*/
+	 transform-origin: 50%;
+	 z-index: -1;
+     animation: ripple-1 2s infinite ease-in-out;
+     transform: scale(1);
+	 transition: 1000ms transform ease, 2100ms blur ease, 900ms border-color ease;
+}
+
+ .videobannerbtn::after {
+	 transition-delay: 100ms;
+     animation: ripple-2 2s infinite ease-in-out;
+     animation-delay: 0.5s;
+}
+    
+    
+.videobannerbtn i {
+    font-size: 70px;
+    top: 50%;
+    position: absolute;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: #0077c9 !important;
+}
+
+
+@keyframes ripple-1 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple-2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2.7);
+        opacity: 0;
+    }
+}
+
+.home-banner-video iframe {
+    min-width: 100%;
+    min-height: 100%;
+    border: 0;
+    /* filter: grayscale(100%); */
+}
+
+.videodivonpage{
+    display: none;
+    position: absolute;
+    top: 64%;
+}
+
+        
+
+
+@media (max-width: 575.98px) { 
+    
+    .videodiv{
+        margin-bottom: 60px !important;
+    }
+    .videosection{
+        height: auto;
+        min-height: auto;
+    }
+    .videobannerbtn{
+        
+        width: 85px;
+        height: 86px;
+    }
+    .videobannerbtn i{
+        font-size: 40px;
+    }
+    .videobannerbtn::before, .videobannerbtn:after{
+        width: 60px;
+        height: 60px;
+        top: 15%;
+        left: 13%;
+    }
+}
+
+
+
+@media only screen and (min-width:1000px) {
+  .registration-button{
+   margin-top:35%;
+   margin-left:10%; 
+   width:80%;
+  }
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+ .registration-button{
+   margin-top:35px;
+
+  }
+}
+
+    </style>
+  </head>
+  <body>
+     
+     <div class="thetop"></div>
+     
+     
+        <!-- Header start -->
+      <header id="header" class="header header-transparent desktop-header">
+          
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-sm-12 text-left my-auto">
+                    <a class="navbar-brand" href="http://thepower-pm.com/">
+                      <h3 class="building-heading text-left">The Power of Project Management <br>Builds Organizational Competence for Sustainable Excellence</h3>
+                   </a> 
+                  </div>
+                  <div class="col-md-6 col-sm-12 text-right">
+                      <a class="navbar-brand" href="http://thepower-pm.com/">
+                  <img class="ppmlogo" src="img/ppm-final.png" alt="" width="100%">
+                     </a>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-md-10 col-sm-12 text-center">
+             <nav class="navbar navbar-expand-sm justify-content-center">
+            
+                <ul class="navbar-nav justify-content-center">
+                                 <li class="nav-item active">
+                                  <a href="http://thepower-pm.com/" class="">Home</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="service.html" class="">Services</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="about.html" class="">About Us</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="up-coming-event.html" class="">Up-coming Events</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="pastevent.html">Past Events</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="article.html">Articles</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="book.html">Book</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="contact.html">Contact</a>
+                                 </li>
+                          <!--       <li class="nav-item">-->
+                          <!--<a href="contact.html" style="background-color:orange;">Event Registration</a>-->
+                          <!--       </li>-->
+                                 </ul>
+            
+            </nav>                                 
+            <a href=" https://thepower-pm.com/pay/registration/"><button type="button" class="btn  " Style="font-size:10px; padding-left:10px;padding-right:10px;  margin-bottom: 10px; padding-top:0px;";>Event Registration</button></a>
+
+                  </div>
+              </div>
+          </div>
+          
+         <!--<div class="container header-container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              
+               <a class="navbar-brand" href="http://thepower-pm.com/">
+                  <h3 class="building-heading text-left">The Power of Project Management <br>Builds Organizational Competence for Sustainable Excellence</h3>
+               </a>
+              
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                      <a href="http://thepower-pm.com/" class="">Home</a>
+                    
+                     </li>
+                     <li class="nav-item">
+                        <a href="service" class="">Services</a>
+                      
+                     </li>
+                     <li class="nav-item">
+                        <a href="about" class="">About Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="up-coming-event" class="">Up-coming Events</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="pastevent"> Past Events</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="contact">Contact</a>j
+                     </li>
+                     
+                  </ul>
+                     <a class="navbar-brand" href="http://thepower-pm.com/">
+                  <img class="ppmlogo" src="img/ppm-final.png" alt="" width="100%">
+                     </a>
+               </div>
+            </nav>
+         </div>-->
+         
+      </header>
+      <!--/ Header end -->
+      
+     <!--Mobile Header-->
+     <div class="container-fluid mobile-header">
+	
+	<nav class="navbar navbar-expand-lg navbar-light">
+   <a href="http://thepower-pm.com/">
+		       <img class="ppmlogo" src="img/ppm-final.png" width="100%"> 
+		    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="color: #fff;">
+   ☰
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="mobileul mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://thepower-pm.com/">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="service.html">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="up-coming-event.html">UP-COMING EVENTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pastevent.html">PAST EVENTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="book.html">BOOK</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link" href="article.html">ARTICLES</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT US</a>
+      </li>
+      
+      <li class="nav-item">
+      </li>
+      	     
+    </ul>
+
+
+   
+  </div>
+</nav>
+     <center style=margin-bottom:10px;> <a href=" https://thepower-pm.com/pay/registration/"><button  type="button" class="btn btn-primary re" style="width:50%; font-size:11px;">Event Registration</button></a></center>
+
+</div>
+     <!--Mobile Header-->
+     
+      <!-- banner start-->
+      <section class="hero-area position-rel mb-5" style="">
+          
+          <div class="owl-carousel owl-theme homebanner mb-5">
+            <div class="item">
+                <div class="contentdiv">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-md-8 col-sm-12 my-auto">
+                           <!--<p class="banner-info wow fadeInUp text-white" data-wow-duration="1.5s" data-wow-delay="500ms">Empowering the organizations with</p>-->
+                            <h1 class="banner-title wow fadeInUp text-white" data-wow-duration="1.5s" data-wow-delay="700ms">THE POWER OF PROJECT MANAGEMENT</h1> 
+                        </div>
+                        <div class="col-md-4 col-sm-12 displaynonemobile">
+                            <div class="single-intro-text mb-30" style="background: #ffbc00;">
+                           <i class="icon icon-speaker"></i>
+                           <h3 class="ts-title text-white">Power 1</h3>
+                           <p class="text-white">The project management approach helps implementation of business strategy and advancement in strategic direction.</p>
+                           <!--<span class="count-number">Power<br>1</span>-->
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <img src="img/banner2.jpg">
+            </div>
+            
+            <div class="item">
+                <div class="contentdiv">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-md-8 col-sm-12 my-auto">
+                            <h1 class="banner-title wow fadeInUp text-white" data-wow-duration="1.5s" data-wow-delay="700ms">THE POWER OF PROJECT MANAGEMENT</h1> 
+                        </div>
+                        <div class="col-md-4 col-sm-12 displaynonemobile">
+                            <div class="single-intro-text mb-30" style="background: #0a8f28;">
+                           <i class="icon icon-netwrorking"></i>
+                           <h3 class="ts-title text-white">Power 2</h3>
+                           <p class="text-white">The framework helps results-driven management, focus on customer need and expectation, and managing agile-networking. </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <img src="images/hero-area/ban1.jpg">
+            </div>
+            <div class="item">
+                <div class="contentdiv">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-md-8 col-sm-12 my-auto">
+                            <h1 class="banner-title wow fadeInUp text-white" data-wow-duration="1.5s" data-wow-delay="700ms">THE POWER OF PROJECT MANAGEMENT</h1> 
+                        </div>
+                        <div class="col-md-4 col-sm-12 displaynonemobile">
+                           <div class="single-intro-text mb-30" style="background: #1616b4;">
+                           <i class="icon icon-people"></i>
+                           <h3 class="ts-title text-white">Power 3</h3>
+                           <p class="text-white">Framework helps humanizing the workplaces through art of possibilities, solution for issues, decision making, actions and initiatives. </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <img src="img/banner3.jpg">
+            </div>
+            
+            <div class="item">
+                <div class="contentdiv">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-md-8 col-sm-12 my-auto">
+                            <h1 class="banner-title wow fadeInUp text-white" data-wow-duration="1.5s" data-wow-delay="700ms">THE POWER OF PROJECT MANAGEMENT</h1> 
+                        </div>
+                        <div class="col-md-4 col-sm-12 displaynonemobile">
+                          <div class="single-intro-text mb-30" style="background: #b21919;">
+                           <i class="icon icon-fun"></i>
+                           <h3 class="ts-title text-white">Power 4</h3>
+                           <p class="text-white">Helps Talent Management, focus on performance, managing accountability and responsibilities at every level.</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <img src="img/banner4.jpg">
+            </div>
+        </div>
+        
+          
+     <!--    <div class="banner-item" style="background-image: linear-gradient( rgba(2, 2, 2, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url(images/hero-area/ban1.jpg)">-->
+     <!--       <div class="container">-->
+     <!--          <div class="row">-->
+     <!--             <div class="col-lg-6">-->
+     <!--                <div class="banner-content-wrap">-->
+
+     <!--                   <p class="banner-info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">Empowering the organizations with</p>-->
+     <!--                   <h1 class="banner-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">Enhanced Capabilities for  Strategic Advancements</h1>-->
+
+                  
+     <!--                   <div class="banner-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="800ms">-->
+     <!--                      <a href="pay-reg" class="btn">Register Now</a>-->
+     <!--                   </div>-->
+
+     <!--                </div>-->
+                     
+     <!--             </div>-->
+     <!--             <div class="col-lg-6 align-self-end my-auto">-->
+     <!--               <video id="video-" class="video-mob" width="100%" preload="auto" src="https://11jvfl23vm4l3xirbp1ovizf-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/ON24_Homepage-2-0_Video.mp4" muted="" autoplay="" loop="" playsinline=""  __idm_id__="830124034">-->
+					<!--</video>-->
+     <!--             </div>-->
+     <!--          </div>-->
+     <!--       </div>-->
+            
+     <!--    </div>-->
+         
+      </section>
+      <!-- banner end-->
+
+       <!-- Section no 1 -->
+    
+      <!-- <section class="ts-intro-item section-bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms">
+                  <div class="intro-left-content">
+                     <h2 class="column-title">
+                        <span>Why Join Power-PM</span>
+                        THE POWER OF PROJECT MANAGEMENT
+                        
+                     </h2>
+                     <div class="text-center">
+                         <hr class="new-hr">
+                     </div>
+                     <p>
+                        Empowering the organizations with the power of project management for managing business with enhanced capabilities for fast decision making and managing human aspects.
+                     </p>
+                     <a href="pay-reg" class="btn btn-ticket-1">Register Now</a>
+                  </div>
+               </div>
+               <div class="col-lg-8">
+                  <div class="row">
+                     <div class="col-lg-6 servicediv wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
+                        <div class="single-intro-text mb-30">
+                           <i class="icon icon-speaker"></i>
+                           <h3 class="ts-title">Great Speakers</h3>
+                           <p>
+                              The project management approach helps implementation of business strategy and advancement in strategic direction.
+                           </p>
+                           <span class="count-number">01</span>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 servicediv wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
+                        <div class="single-intro-text mb-30">
+                           <i class="icon icon-netwrorking"></i>
+                           <h3 class="ts-title">New People</h3>
+                           <p>
+                             The framework helps results-driven management, focus on customer need and expectation, and managing agile-networking. 
+                           </p>
+                           <span class="count-number">02</span>
+                        </div>
+
+                     </div>
+                     <div class="col-lg-6 servicediv wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="600ms">
+                        <div class="single-intro-text mb-30">
+                           <i class="icon icon-people"></i>
+                           <h3 class="ts-title">Networking</h3>
+                           <p>
+                             Framework helps humanizing the workplaces through art of possibilities, solution for issues, decision making, actions and initiatives. 
+                           </p>
+                           <span class="count-number">03</span>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 servicediv wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">
+                        <div class="single-intro-text mb-30">
+                           <i class="icon icon-fun"></i>
+                           <h3 class="ts-title">Have Fun</h3>
+                           <p>
+                             Helps Talent Management, focus on performance, managing accountability and responsibilities at every level.
+                           </p>
+                           <span class="count-number">04</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>-->
+      
+      <!-- section no 1 end -->
+
+
+      <!-- 2 type section -->
+      
+      <section class="position-rel mb-40 videosection">
+          <div class="home-banner-video"> 
+              <div id="overlay-video-bg"></div> 
+              <iframe src="https://www.youtube.com/embed/fMSdVwl1nFo?autoplay=1&controls=0&mute=1&loop=1&border=0&playlist=fMSdVwl1nFo" allowfullscreen></iframe>
+              <!--<iframe src="https://www.youtube.com/embed/MY5SatbZMAo?autoplay=1&controls=0&mute=1&loop=1&border=0"></iframe>-->
+              <!--<video autoplay="" muted="" loop="" src="https://noorularfeen.com/img/bg-video.mp4" type="video/type"></video> -->
+          </div>
+        <div class="container height-100 position-rel">
+            <div class="row height-100">
+                <div class="col-md-6 col-sm-12 videodiv my-auto">
+                    <a class="videobannerbtn" href="https://www.youtube.com/watch?v=fMSdVwl1nFo" data-fancybox="gallery">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 my-auto">
+                     <div>
+                          <!--<h2 class="section-titles" style="color: #fff;">THE POWER OF PROJECT MANAGEMENT</h2>
+                          <hr class="new-hr">-->
+                          <p class="exp-p-mob videosecheading">Empowering the organizations with the power of project management for managing business with 
+                          enhanced capabilities for fast decision making and managing human aspects.</p>
+                        </div>
+                </div>
+                
+            </div>  
+            <!--<div class="row justify-content-center">
+                <div class="col-md-6 col-sm-12 videodivonpage">
+                    <iframe src="https://www.youtube.com/embed/fMSdVwl1nFo?autoplay=1&controls=0&border=0&playlist=fMSdVwl1nFo" width="100%" height="375" allowfullscreen></iframe>
+                </div>
+            </div>-->
+          </div>
+      </section>
+
+      <!--<section id="ts-experiences" class="ts-experiences" style="padding: 0px 0;">
+         <div class="container-fluid" style="padding-left: 0px;">
+           <div class="row" style="background-color: #3b1d82;">
+      <div class="col-md-6 exp-img-mob">
+        <img src="images/about/about1.jpg" width="100%" style="height: 100%; max-height: 450px;">
+      </div>
+      <div class="col-md-6  exp-mob  my-auto">
+        <div>
+          <h2 class="section-titles" style="color: #fff;">THE POWER OF PROJECT MANAGEMENT</h2>
+          <hr class="new-hr">
+          <p class="exp-p-mob" style="color: white; padding: 9px 154px;">Empowering the organizations with the power of project management for managing business with enhanced capabilities for fast decision making and managing human aspects.
+
+</p>
+        </div>
+      </div>
+    </div>
+         </div>
+      </section>-->
+
+      <!-- 2 type section END-->
+
+
+<center>
+                      <h2 class="text-center newheading" style="margin-top:20px;">JOIN THE EVENT</h2>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col" >
+    
+    <section class="position-rel mb-40 videosection" style="height:200px; width:50%;">
+          <div class="home-banner-video" style="height:300px;"  > 
+              <div id="overlay-video-bg"></div> 
+              <!--<iframe style="background-image:url(img/banner4.jpg); background-repeat: no-repeat;  background-size: 100%;  src="https://www.youtube.com/embed/IF8Q5KxCUwo?autoplay=1&controls=0&mute=1&loop=1&border=0&playlist=fMSdVwl1nFo" allowfullscreen></iframe>-->
+                           <iframe style="background-image:url(img/banner4.jpg); background-repeat: no-repeat;  background-size: 100%;  src="https://www.youtube.com/embed/rGrpUFyLAVA?autoplay=1&controls=0&mute=1&loop=1&border=0&playlist=fMSdVwl1nFo" allowfullscreen></iframe>
+
+              </div>
+        <div class="container height-100 position-rel">
+            <div class="row height-100">
+                <div class="col videodiv my-auto">
+                    <a class="videobannerbtn" href="https://www.youtube.com/embed/X3quPkZtqjY=fMSdVwl1nFo" data-fancybox="gallery">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+             
+                
+            </div>  
+        
+          </div>
+      </section>
+    
+    </div>
+   
+  </div>
+
+  <div class="row">
+    <div class="col">
+    
+<center><a href="https://thepower-pm.com/pay/registration/"><button type="button" class=" btn btn-primary btn-lg  " style="margin-top:20px;";>Event Registration</button></a></center>
+
+
+<center><a href="https://thepower-pm.com/aslammirzaprofile.html"><button type="button" class=" btn btn-primary btn-lg  " style="margin-top:20px;";>Visit Presenter's Profile</button></a></center>
+
+    </div>
+   
+  </div>
+</div>
+</center>
+
+
+
+      <!-- ts speaker start-->
+      <section class="ts-blog section-bg">
+         <div class="container">
+            <div class="row ">
+               <div class="col-lg-8 mx-auto">
+                  
+                  
+                  
+
+                  
+                  
+                  <hr class="new-hr">
+               </div><!-- col end-->
+            </div><!-- row end-->
+            <div class="row justify-content-center" style="margin-top:100px;">
+              <!-- <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
+                  <div class="post">
+                     <div class="post-media post-image">
+                        <a href="#"><img src="images/blog/blog1.jpg" class="img-fluid" alt=""></a>
+                     </div>
+
+                     <div class="post-body">
+                        <!--<div class="post-meta">-->
+                        <!--   <span class="post-author">-->
+                        <!--     <a href="#">BY Admin</a>-->
+                        <!--   </span>-->
+
+                        <!--   <div class="post-meta-date">-->
+                        <!--      October 8, 2018-->
+                        <!--   </div>-->
+                        <!--</div>-->
+                       <!--  <div class="entry-header">
+                           <h2 class="entry-title">
+                              <a href="pastevent">Past Event</a>
+                           </h2>
+                        </div><!-- header end -->
+
+                       <!--  <div class="entry-content">
+                           <p>How you transform your business asap technology, consumer,</p>
+                        </div>
+
+                        <div class="post-footer">
+                           <a href="news-single" class="btn-link">Read More <i class="icon icon-arrow-right"></i></a>
+                        </div>
+
+                     </div><!-- post-body end -->
+                 <!--  </div><!-- post end-->
+               <!-- </div><!-- col end-->
+               <div class="row justify-content-center">
+               <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
+                  <div class="post">
+                     <!--<div class="post-media post-image">-->
+                        <!--<a href="#"><img src="img/WhatsApp Image 2021-09-08 at 19.06.13.jpeg" class="img-fluid" alt=""></a>-->
+                     <!--</div>-->
+
+                     <div class="post-body" style="padding-top:10px;">
+                        <!--<div class="post-meta">-->
+                        <!--   <span class="post-author">-->
+                        <!--     <a href="#">BY Admin</a>-->
+                        <!--   </span>-->
+
+                        <!--   <div class="post-meta-date">-->
+                        <!--      October 8, 2018-->
+                        <!--   </div>-->
+                        <!--</div>-->
+                        <div class="entry-header">
+                           <h2 class="entry-title">
+                               <!--<h3>28th September, 2021</h3>-->
+                              <h3 style="color:#2022d0;">Training Program For 2021</h3>
+                              <p> The growing complexity and increasing doubts in advancements of businesses to strategic direction has 
+brought focus on managing organizational capability for strategic implementation. The organizations 
+capable of facing the challenges of advancement in strategic direction, will survive</p>
+                           </h2>
+                        </div><!-- header end -->
+
+                        <!--<div class="entry-content">
+                           <p>How you transform your business asap technology, consumer,</p>
+                        </div>-->
+
+                        <div class="post-footer">
+                           <a href="http://thepower-pm.com/Business%20Thriving.html" class="btn-link">Learn More</a>
+                        </div>
+
+                     </div><!-- post-body end -->
+                  </div><!-- post end-->
+               </div><!-- col end-->
+               
+               <!-- col end-->
+               
+            </div><!-- col end-->
+               
+               <!-- col end-->
+               
+               
+              <!-- <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="600ms"> 
+                  <div class="post">
+                     <div class="post-media post-image">
+                        <a href="#"><img src="images/blog/blog3.jpg" class="img-fluid" alt=""></a>
+                     </div>
+
+                     <div class="post-body">
+                        <!--<div class="post-meta">-->
+                        <!--   <span class="post-author">-->
+                        <!--           <a href="#">BY Admin</a>-->
+                        <!--         </span>-->
+
+                        <!--   <div class="post-meta-date">-->
+                        <!--      October 8, 2018-->
+                        <!--   </div>-->
+                        <!--</div>-->
+                        <!--<div class="entry-header">
+                           <h2 class="entry-title">
+                              <a href="#">Articles</a>
+                           </h2>
+                        </div><!-- header end -->
+
+                       <!-- <div class="entry-content">
+                           <p>How you transform your business asap technology, consumer,</p>
+                        </div>
+
+                        <div class="post-footer">
+                           <a href="news-single" class="btn-link">Read More <i class="icon icon-arrow-right"></i></a>
+                        </div>
+
+                     </div><!-- post-body end -->
+                 <!-- </div><!-- post end-->
+              <!-- </div><!-- col end--> 
+            </div><!-- row end-->
+         </div><!-- container end-->
+         <!-- shap image-->
+         <div class="speaker-shap">
+             <img class="shap2" src="images/shap/news_memphis2.png" alt="">
+         </div>
+
+      </section>
+      <!-- ts blog end-->
+
+    
+
+     <section>
+<!--       <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-6">-->
+<!--        <div class="card for-h">-->
+<!--  <img class="card-img-top" src="images/blog/blog4.jpg" alt="Card image cap">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title section-titles">Vision</h5>-->
+<!--    <hr class="new-hr-3">-->
+<!--    <p class="card-text">Business success is achieved with Project management skills and certifications that are pursued -->
+<!--    through talent management and competence building of -->
+<!--    an organization for advancement in strategic direction and sustainable growth under perpetual disruption.</p>-->
+    
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--           <div class="col-md-6">-->
+<!--         <div class="card for-h">-->
+<!--  <img class="card-img-top" src="images/blog/blog5.jpg" alt="Card image cap">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title section-titles">Mission</h5>-->
+<!--    <hr class="new-hr-3">-->
+<!--    <p class="card-text">Promotion of awareness of the strengths of project management concepts -->
+<!--    for adaptation by professionals, -->
+<!--    business and industry for making way forward in disrupting business environment.</p>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--        </div>-->
+         
+<!--       </div>-->
+<div  style="background: linear-gradient( rgba(2 2 2 / 72%) 100%, rgba(0, 0, 0, 0.5)100%), url(images/hero-area/ban3.jpg) no-repeat center center; background-size: cover;"> 
+
+<div class="container">
+    
+
+    <div class="row" >
+          
+          
+           <div class="col-md-4 v-for-mob"  style="padding: 120px 20px;">
+               <h2 style="color: #fff;">
+                   Vision
+               </h2>
+               <hr class="new-hr-5">
+               <p style="color: #fff;">
+                  Business success is achieved with Project management skills and certifications that are pursued
+                     through talent management and competence building of 
+                     an organization for advancement in strategic direction and sustainable growth under perpetual disruption. 
+               </p>
+           </div>
+           <div class="col-md-4 v-for-mob"  style="padding: 120px 20px;">
+               <h2 style="color: #fff;">
+                   Mission
+               </h2>
+               <hr class="new-hr-5">
+               <p style="color: #fff;">
+                   Promotion of awareness of the strengths of project management concepts
+                   for adaptation by professionals, 
+                   business and industry for making way forward in disrupting business environment.
+               </p>
+           </div>
+           
+              <div class="col-md-4 v-for-mob"  style="padding: 120px 20px;">
+               <h2 style="color: #fff;">
+                   Our Values
+               </h2>
+               <hr class="new-hr-5">
+               
+                 <ul class="uno" type="bullet" style="color: #fff;">
+                     <li>Work on High Moral Grounds</li> 
+                     <li>Respect for Human aspects</li> 
+                     <li>Create Coherence </li> 
+                     <li>Enhance Inter-relationship in Team </li>  
+                </ul>
+             
+           </div>
+           
+       </div>
+       </div>
+
+</div>
+     </section>
+    <!--Footer six Design Start -->
+  <footer>
+      
+    <div style="background-color: #ad135a;">
+     <div class="container">
+        <div class="row footercontentdivrow">
+            <div class="col-md-6 text-left footerheadingandimg">
+      
+                  <h3 class="building-heading text-left text-white">The Power of Project Management <br>Builds Organizational Competence for Sustainable Excellence</h3>
+             
+              </div>
+             <div class="col-md-6 text-right footerheadingandimg">
+        <img class="ppmlogo" src="img/ppm-final.png" alt="" width="100%">
+        </div>
+       </div>
+       </div>
+       
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-sm-12 col-md-12 text-white footer6  mb-3">
+          <ul>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="up-coming-event.html">Upcoming-Events</a></li>
+            <li><a href="pastevent.html">Past-Events</a></li>
+            <li style=" margin-right: 0;"><a href="contact">Contact</a></li>
+          </ul>
+          
+        </div>
+        <hr style="border-top: 2px solid #fff; width: 61%;" class="text-white text-center">
+      </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <p class="footer6p text-center">Empowering the organizations with the power of project management for managing business with enhanced capabilities for fast decision making and managing 
+        human aspects.</p>
+        <div class="row   pb-5 text-center">
+          <div class="col-sm-12 col-md-12 icon3">
+          <a href="https://www.facebook.com/thepowerpm" style="background: #3d5b97"><i class="fa fa-facebook-f"></i></a>
+          <!--<a href="" style="background: #da2a35;"><i class="fa fa-instagram"></i></a>-->
+          <a href="https://youtu.be/rGrpUFyLAVA" style="background: #ff1a00;"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/icms-spm-31a67319b"  style="background: #1384c8;"><i class="fa fa-linkedin"></i></a>
+            
+          </div>
+        </div>
+        
+      </div>
+     
+    </div>
+     
+      </div>
+   
+    </div>
+       
+      <div class="footer-copyright text-center py-3 copyrightdiv">© 2021 Copyright | Designed by <a href="https://giantssolutions.com/" target="_blank"><b style="color: #fff;">Giants Solutions</b></a>
+  </div>
+  </footer>
+  
+  <div class="scrolltop" style="display: none;">
+        <div class="scroll icon"><i class="fa fa-4x fa-angle-up" aria-hidden="true"></i></div>
+    </div>
+ 
+  <!--Footer six Design End -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fixcontent.js"></script>
+
+    <script>
+    
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+$('.homebanner').owlCarousel({
+        loop:true,
+        margin: 0,
+        autoplay:true,
+        autoplayTimeout:4000,
+        slideSpeed: 2000,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        mouseDrag: true,
+        touchDrag: true,
+        pullDrag: false,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+        
+        
+        $('[data-fancybox="gallery"]').fancybox({
+                  buttons : [ 
+                    'slideShow',
+                    'share',
+                    'zoom',
+                    'fullScreen',
+                     'thumbs',
+                      'close'
+                  ]
+                });
+
+
+            $( ".videobannerbtn" ).click(function() {
+              $(".videodivonpage").css("display","block");
+            });
+
+</script>
+  </body>
+</html>

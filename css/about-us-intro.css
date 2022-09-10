@@ -1,0 +1,211 @@
+/*ABOUT US INTRO SECTION*/
+.about-intro-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.side-text .head h1 {
+  margin-top: 0;
+  font-size: clamp(1.5rem, 1.5rem + 1.9814vw, 1.7rem);
+  color: #3b1d82;
+  transition: color 0.1s ease-out;
+  z-index: 1;
+  text-align: justify;
+}
+.side-text .head h2 {
+  font-size: clamp(0.6875rem, 0.5789rem + 1.5929vw, 1.4125rem);
+  font-weight: 500;
+  text-align: justify;
+}
+.side-text .head span {
+  font-size: clamp(0.6875rem, 0.3789rem + 1.5929vw, 1.3125rem);
+}
+
+.side-text .head ul li {
+  font-size: clamp(0.6875rem, 0.2789rem + 1.5929vw, 1.1125rem);
+}
+
+@media screen and (min-width: 900px) {
+  /*ABOUT US INTRO SECTION*/
+  .about-intro-container aside {
+    color: rgb(0, 0, 0);
+    display: flex;
+  }
+
+  .side-logo {
+    flex-basis: 35%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side-logo span {
+    position: relative;
+    height: 600px;
+  }
+
+  .side-logo span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+      45deg,
+      rgba(120, 0, 124, 0.207) 0%,
+      rgba(160, 91, 0, 0.145) 100%
+    );
+    height: 100%;
+    width: 100%;
+    background-position: left;
+    background-size: 300%;
+    animation: bg-gradient 5s ease-in-out infinite alternate forwards;
+  }
+
+  @keyframes bg-gradient {
+    0% {
+      background-position: left;
+    }
+
+    100% {
+      background-position: right;
+    }
+  }
+
+  .side-logo img {
+    flex-basis: 100%;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .side-text {
+    flex-direction: column;
+    flex-basis: 65%;
+    transition: flex 0.5s ease-out;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  /*
+  .side-text:hover {
+    flex-basis: 75%;
+  }*/
+  .side-text {
+    background: #dadada25;
+  }
+
+  /*HEADING BG ANIMATION
+  .side-text::before {
+    background-color: var(--primary);
+    content: "";
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 600ms ease-in-out;
+    z-index: -1;
+  }
+
+  .side-text:hover::before {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+
+  .side-text:hover .head h1 {
+    color: white;
+  }*/
+
+  .slide-text .head {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1255px) {
+  .side-text::before {
+    height: 15%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /*ABOUT US INTRO SECTION*/
+  .about-intro-container {
+    flex-wrap: wrap;
+  }
+
+  .side-logo {
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .side-logo img {
+    width: 100%;
+  }
+
+  .side-text {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+
+  .side-text .head h1 {
+    background-color: var(--primary);
+    padding: 10px;
+    color: white;
+  }
+
+  .side-logo video {
+    width: 100%;
+  }
+}
+
+/*VIDEO SECTION*/
+.video-container {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .video-container .side-logo {
+    flex-basis: 75%;
+    transition: flex 0.5s ease-out;
+  }
+
+  .video-container .side-logo span::before {
+    background-image: linear-gradient(
+      45deg,
+      rgba(10, 1, 10, 0.407) 0%,
+      rgba(240, 235, 228, 0.2) 100%
+    );
+  }
+
+  .side-logo video {
+    flex-basis: 100%;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .video-container .side-text {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side-text {
+    background: #dadada25;
+  }
+
+  .video-container .side-text::before {
+    display: none;
+  }
+
+  .slide-text .head {
+    flex-wrap: wrap;
+  }
+}

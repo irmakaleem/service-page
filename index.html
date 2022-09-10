@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Empowering the organizations with the power of project management
+              for managing business with enhanced capabilities for fast decision
+              making and managing human aspects."
+    />
+    <link rel="icon" type="image/x-icon" href="img/siteicon.png" />
+    <title>The Power | PM</title>
+    <!--FONT AWESOME CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--PRELOADER CSS-->
+    <link rel="stylesheet" href="css/preloader.css" />
+    <!--HEADER CSS-->
+    <link rel="stylesheet" href="css/header.css" />
+    <!--CAROUSEL CSS-->
+    <link rel="stylesheet" href="css/carousel.css" />
+    <!--ABOUT US INTRO SECTION-->
+    <link rel="stylesheet" href="css/about-us-intro.css" />
+    <!--MAIN STYLESHEET-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--MODAL POPUP CSS-->
+    <link rel="stylesheet" href="css/modal.css" />
+    <!--VIDEO CARD-->
+    <link rel="stylesheet" href="css/video-cards.css" />
+    <!--SLIDER CSS-->
+    <link rel="stylesheet" href="css/slider.css" />
+    <!--FOOTER CSS-->
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <!--PRELOADER-->
+    <div class="items" id="items">
+      <div class="loader rings">
+        <span class="a"></span>
+
+        <span class="b"></span>
+
+        <span class="c"></span>
+      </div>
+    </div>
+
+    <!--MAIN WRAPPER-->
+    <div class="wrapper">
+      <!--MAIN HEADER-->
+      <header class="container">
+        <div class="row">
+          <div class="r1-col txt-col">
+            <p style="font-weight: bold">
+              The Power of Project Management <br class="br-small" />
+              Builds Organizational Competence for Sustainable Excellence
+            </p>
+          </div>
+
+          <div class="r1-col logo-col">
+            <div class="logo">
+              <img src="img/logo.png" alt="" style="width: 100%" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-btn-mobile">
+          <div class="dd dd-on-mob">
+            <div class="dropdown">
+              <a onclick="myFunction()" class="reg-btn"
+                >Event Registration
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+              </a>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Payment in USD</a>
+                <a href="#">Payment in PKR</a>
+              </div>
+            </div>
+          </div>
+
+          <label for="toggle-nav" class="toggle-nav-label">
+            <i class="fas fa-bars" style="font-size: 25px"></i>
+          </label>
+        </div>
+
+        <div class="row row-nav">
+          <input type="checkbox" id="toggle-nav" class="toggle-nav" />
+
+          <nav class="header-nav">
+            <ul class="header-ul">
+              <li><a href="/">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about">About us</a></li>
+              <li><a href="up-coming-events.html">Up-coming Events</a></li>
+              <li><a href="past-events">Past Events</a></li>
+              <li><a href="articles">Articles</a></li>
+              <li><a href="book">Book</a></li>
+              <li><a href="contact">Contact</a></li>
+              <div class="dd display-none-mobile">
+                <div class="dropdown">
+                  <a onclick="myFunction()" class="reg-btn"
+                    >Event Registration
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </a>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Payment in USD</a>
+                    <a href="#">Payment in PKR</a>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!--MAIN CAROUSEL-->
+      <main class="carousel-container">
+        <div class="slider-container">
+          <div class="left-slides">
+            <div class="slide slide-1">
+              <div>
+                <h3>THE POWER OF PROJECT MANAGEMENT</h3>
+                <p>
+                  The project management approach helps implementation of
+                  business strategy and advancement in strategic direction.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide slide-2">
+              <div>
+                <h3>THE POWER OF PROJECT MANAGEMENT</h3>
+                <p>
+                  The framework helps results-driven management, focus on
+                  customer need and expectation, and managing agile-networking.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide slide-3">
+              <div>
+                <h3>THE POWER OF PROJECT MANAGEMENT</h3>
+                <p>
+                  Framework helps humanizing the workplaces through art of
+                  possibilities, solution for issues, decision making, actions
+                  and initiatives.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide slide-4">
+              <div>
+                <h3>THE POWER OF PROJECT MANAGEMENT</h3>
+                <p>
+                  Helps Talent Management, focus on performance, managing
+                  accountability and responsibilities at every level.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-slides">
+            <div style="background-image: url(img/banner1.jpg)"></div>
+
+            <div style="background-image: url(img/banner2.jpg)"></div>
+
+            <div style="background-image: url(img/banner3.jpg)"></div>
+
+            <div style="background-image: url(img/banner4.jpg)"></div>
+          </div>
+
+          <aside class="btn-container btn-container-sm slider-nav-btns">
+            <a href="#experts" class="reg-btn"> Webinar Speakers </a>
+            <a href="#collab" class="reg-btn"> Collaboration </a>
+            <a href="#presen" class="reg-btn"> Presentations </a>
+          </aside>
+
+          <div class="buttons">
+            <button class="left-btn">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="right-btn">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <!--ABOUT US INTRO SECTION-->
+      <section class="about-intro-container">
+        <aside class="side-logo right">
+          <span><img src="img/corporate.jpg" alt="Corporate" /></span>
+        </aside>
+
+        <aside class="side-text">
+          <div class="head">
+            <h1>
+              Remote Advisory And Consulting
+              <br id="break-sm" />
+              For Business Advancement In New Normal Of Present Time
+            </h1>
+            <h2>
+              The borderless services are available to business and industries
+              for expert inputs, guidance, second opinion on solution for an
+              issue and management help to make advancement with confidence.
+            </h2>
+
+            <span> Broad line Topics </span>
+
+            <ul>
+              <li>a) Strategic Project Management</li>
+              <li>
+                b) OPM-Organizational Project Management Systems [Results-driven
+                Management]
+              </li>
+              <li>c) Alignment of Endeavors with the Business Strategy</li>
+              <li>
+                d) Diagnostic Assessment of Gaps in Strategy and Implementation
+              </li>
+              <li>e) Construction Project Management</li>
+              <li>f) Construction Contract and Claim Management</li>
+              <li>g) Assessment of Corporate Training</li>
+            </ul>
+
+            <div class="btn-container btn-container-sm">
+              <button data-modal-target="modal2" class="reg-btn">
+                Service Areas
+              </button>
+
+              <div class="modal" id="modal2">
+                <div class="modal-content">
+                  <h5 class="modal-close">&times;</h5>
+                  <h5 class="modal-heading">Focused Approach</h5>
+                  <ul class="modal-list">
+                    <li>1) Business advancement in New Normal Environment</li>
+                    <li>2) Reimagining of Workplace</li>
+                    <li>3) Building Organizational Competence</li>
+                    <li>4) Application of Strategic Project Management</li>
+                    <li>5) Organizational Project Management Systems</li>
+                    <li>6) Results-driven Managements</li>
+                    <li>7) Moving from Just Surviving to Thriving</li>
+                    <li>8) Strategy Development and Implementation</li>
+                    <li>9) Advancement in a Strategic Direction</li>
+                    <li>10) Development of Leadership</li>
+                    <li>11) Project Implementation</li>
+                    <li>12) Team building for a project</li>
+                    <li>13) Leadership for Making Difference</li>
+                  </ul>
+                  <h5 class="modal-text">
+                    Our insightful professional support may help you managing a
+                    challenge at a stage of endeavor in business advancement
+                    when you need guidance, second opinion or simple advisory
+                    support. You may discuss your issue or challenge for a
+                    workable timely solution. The noted above is just an
+                    indicative list.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!--EXPERTS INTRO SECTION-->
+      <section class="page-section" id="experts">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="section-heading text-uppercase">Approach The Experts</h2>
+          </div>
+          <ul class="timeline">
+            <li class="timeline-inverted">
+              <div
+                class="timeline-image"
+                style="
+                  background: url('img/aslammirza.jpeg') no-repeat center center;
+                  background-size: cover;
+                "
+              ></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h2>
+                    M. Aslam Mirza
+                    <span style="font-size: 11px"> | CEngr, MBA, LMG, PMP</span>
+                  </h2>
+                  <h4 class="subheading"></h4>
+                  <p class="subheading-para" style="font-size: 11px">
+                    Practitioner of Strategic Project Management
+                  </p>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    He is practitioner of “Strategic project management” having
+                    the realization that projects are initiated to achieve
+                    business results and organizational project management
+                    approach should be better aligned with the higher-level
+                    enterprise strategy. <br />
+                    Organizational Project Management [OPM] helps linking
+                    portfolio, program and project management principles and
+                    practices and organizational enablers like – structural,
+                    cultural, technological and human resource practices
+                    supporting the strategic advancement. It is globally
+                    recognized a 21st Century Management Concept for advancing
+                    in strategic direction with high performance, high
+                    productivity, and sustainable growth. <br />
+                    His areas of support are noted following;<br />
+                    a) Cultural design and managing a good fit for teams to
+                    achieve high performance and productivity at workplace.<br />
+                    b) Strategic advancement with setting up portfolio for a
+                    business goal comprising programs, projects and controlling
+                    through PMO.<br />
+                    c) Transformational endeavors of managing gaps in strategy
+                    and implementation.<br />
+                    d) Enjoy coaching and mentoring the leaders for high
+                    performance.
+                  </p>
+                  <div class="btn-container-sm">
+                    <button data-modal-target="modal3" class="reg-btn">
+                      Professional Introduction
+                    </button>
+
+                    <div class="modal" id="modal3">
+                      <div class="modal-content">
+                        <h5 class="modal-close">&times;</h5>
+
+                        <h5 class="modal-heading" style="margin-bottom: 0">
+                          <img src="img/aslammirza.jpeg" />
+                        </h5>
+
+                        <h5 class="modal-heading">
+                          M. Aslam Mirza
+                          <span style="font-size: 11px">
+                            | CEngr, MBA, LMG, PMP</span
+                          >
+                        </h5>
+
+                        <h5
+                          class="modal-text"
+                          style="text-align: justify; color: black"
+                        >
+                          He has a unique mix of exposure to wealth of
+                          knowledge, hands-on making things happen and working
+                          with diversified global team. He worked with world
+                          class body-Project Management Institute, US, for
+                          advancement of Project Management professional
+                          knowledge and Global Standards. His captured insights
+                          have brought him the strengths to deal with business
+                          challenges and finding the best solutions for high
+                          performance and high productivity.
+                          <br />
+                          <br />
+                          His specialty enumerated as following; • Strategy
+                          Management: Diagnostic assessments and analysis of
+                          situation help managing the mega trends taking place
+                          in business and industry and find the feasible
+                          advancement of business in time of 5/10/15 yrs.<br />
+                          • Strategy Implementation: Identification of gaps,
+                          team building, managing collaborative leadership and
+                          building competence of organization for strategic
+                          advancement.<br />
+                          • Strategic Sustainability: Building systems for
+                          culture of self-improvements, human factors and
+                          workplace environment for high performance & continued
+                          success.<br />
+                          • Construction Project Management: Hands-on exposure
+                          to construction management<br />
+                          <br />
+                          Speaker, presenter, writer and trainer. He captured
+                          insights for Strategic Advancement1. <br />
+                          <br />
+                          4 Books on Project Management & Leadership Challenges,
+                          Publisher-Business Expert Press, US. <br />
+                          <br />
+
+                          a)
+                          <a
+                            href="http://www.businessexpertpress.com/books/project-management-and-leadership-challenges-volume-i-applying-project-management-principles-for-organizational-transformation/"
+                            >Vol –I – Applying Project Management Principles for
+                            Organizational Transformation</a
+                          >
+                          <br />
+                          b)<a
+                            href="http://www.businessexpertpress.com/books/project-management-and-leadership-challenges-volume-ii-understanding-human-factors-and-leadership/"
+                          >
+                            Vol – II – Understanding Human Factors and Workplace
+                            Environment</a
+                          >
+                          <br />
+                          c)
+                          <a
+                            href="http://www.businessexpertpress.com/books/project-management-and-leadership-challenges-volume-iii-respecting-diversity-and-building-teams/"
+                            >Vol – III – Respecting Diversity, Building Team,
+                            Meaningfulness and Growing to Leadership</a
+                          >
+                          <br />
+                          <br />
+                          d)
+                          <a
+                            href="https://www.businessexpertpress.com/books/project-management-and-leadership-challenges-volume-iv-agility-in-project-management-and-collaboration/"
+                            >Vol – IV – Agility in Project Management and
+                            Collaboration</a
+                          >
+                          <br />
+                          <br />
+                          2. Presentations at Symposiums-PMI, US & online at
+                          www.projectmanagement.com <br />
+                          3. 50+ Webinars & peer-reviewed articles published at
+                          www.projectmanagement.com <br />
+                          4. Corporate trainer for building competence to move
+                          in strategic direction.<br />
+                          For detailed professional exposure, visit the
+                          following;<br />
+                          <br />
+                          a)
+                          <a
+                            href="https://www.linkedin.com/in/muhammad-mirza-405384/"
+                            >https://www.linkedin.com/in/muhammad-mirza-405384/</a
+                          >
+                          <br />
+                          b)
+                          <a
+                            href="https://www.projectmanagement.com/profile/maslammirza "
+                            >https://www.projectmanagement.com/profile/maslammirza
+                          </a>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline-inverted">
+              <div
+                class="timeline-image"
+                style="
+                  background: url('img/walenta.png') no-repeat center center;
+                  background-size: cover;
+                "
+              ></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h2>
+                    Thomas Walenta<span style="font-size: 11px">
+                      | PgMP, PMP, PMI Fellow</span
+                    >
+                  </h2>
+                  <h4 class="subheading"></h4>
+                  <p class="subheading-para">
+                    Practitioner of Strategic Project Management
+                  </p>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    With over 50 years on projects, in various industries and
+                    global locations, he offers perspectives, new mindsets, and
+                    wisdom to overcome hurdles in your project, and business
+                    needs like:
+                    <br />1. Establishing a PMO? Find out what benefits you want
+                    the PMO to deliver. <br />2. Understanding how to save a
+                    troubled project? Do a healthcheck and get recommendations
+                    within a week. <br />3. Finding more options to solve a
+                    problem? Invest in divergent thinking, get out of
+                    dichotomies. <br />4. Developing a purpose, strategy and
+                    make it happen? Be coached on how to engage your employees
+                    to become champions of your business transformation.
+                    <br />5. Looking at the human side of projects, business and
+                    other networks? <br />6. Understanding how to influence
+                    culture and behaviours, how to establish trust and increase
+                    collaboration and performance. <br />7. Becoming more
+                    resilient and wiser? Get mentored to reflect on your
+                    strength and to develop your 10 features of wisdom.
+                  </p>
+                  <div class="btn-container-sm">
+                    <button data-modal-target="modal4" class="reg-btn">
+                      Professional Introduction
+                    </button>
+
+                    <div class="modal" id="modal4">
+                      <div class="modal-content">
+                        <h5 class="modal-close">&times;</h5>
+                        <h5 class="modal-heading">
+                          <img src="img/walenta.png" alt="Thomas Walenta" />
+                        </h5>
+                        <h5 class="modal-heading">
+                          Thomas Walenta
+                          <span style="font-size: 11px">
+                            | PgMP, PMP, PMI Fellow</span
+                          >
+                        </h5>
+
+                        <h5 class="modal-text" style="color: black">
+                          He worked on projects and programs from 1974 and
+                          selected Project Management as his sole career
+                          profession in 1988.<br /><br />
+                          Currently, he is a Coach and Mentor for Project
+                          Management Professionals and In- where he gained
+                          experience with setting up complex programs, running
+                          PMOs and turning around troubled projects for IBM
+                          clients in diverse industries and geogra- phies. In
+                          parallel to his work he acts as a project management
+                          volunteer since 1998, as PMI Chapter President, PMI
+                          Board Director and received the PMI Fellow award in
+                          2012. He is a frequent speaker at global conferences
+                          and published in several me- dia. In 2017, he received
+                          a diploma qualification as a non-executive director
+                          from IoD, UK, which complements his 6 years as
+                          director on PMI’s global Board.<br /><br />
+                          He has a background of more than 46 years of working
+                          on projects, 34 years leading projects and 19 years in
+                          charge of programs. He initiated and ran PMOs,
+                          programs and projects for customers of IBM in system
+                          integration, software, out- sourcing and strategy. He
+                          delivered turnkey projects, rolled out SAP to European
+                          country organizations, engaged and delivered large
+                          outsourcing contracts and integrated the full
+                          portfolio of IBM solutions in a key account role.
+                          Recently, he supported a German manufacturer to
+                          establish organization wide portfolio management and
+                          setup of a hybrid PMO, serving agile and traditional
+                          projects. <br /><br />
+                          His cultural experience gained is from government,
+                          insurance, banking, electronics and automotive
+                          industries as well geographically from most European
+                          countries, Russia, Japan, India and US. He visited
+                          about 100 countries.<br /><br />
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--VIDEO AND TEXT SECTION-->
+      <div class="video-container">
+        <div
+          class="panel active"
+          style="
+            background-image: url('https://images3.alphacoders.com/106/thumb-1920-1061065.png');
+          "
+        >
+          <h3>What do you find so entertaining?</h3>
+        </div>
+
+        <div
+          class="panel"
+          style="
+            background-image: url('https://wallpaperaccess.com/full/5283070.jpg');
+          "
+        >
+          <h3>What's so amusing about this?</h3>
+        </div>
+        <div
+          class="panel"
+          style="
+            background-image: url('https://images8.alphacoders.com/103/thumb-1920-1034735.png');
+          "
+        >
+          <h3>What do you take life for, exactly?</h3>
+        </div>
+        <div
+          class="panel"
+          style="
+            background-image: url('https://wallpaperaccess.com/full/5112296.jpg');
+          "
+        >
+          <h3>Why can't you understand?</h3>
+        </div>
+        <div
+          class="panel"
+          style="
+            background-image: url('https://wallpaperaccess.com/full/3518463.jpg');
+          "
+        >
+          <h3>How can you forget?</h3>
+        </div>
+      </div>
+
+      <!--COLLABORATION CAROUSEL-->
+      <main class="carousel-container" id="collab">
+        <div class="slider-container">
+          <div class="left-slides" style="text-align: center">
+            <div class="slide-collab slide slide-1">
+              <div>
+                <h3>"Collaboration for Executive Training Programs"</h3>
+                <img src="img/suffa1.png" alt="DHA SUFFA UNIVERSITY" />
+                <p>
+                  "Competence Building of Businesses and Industries to Move in a
+                  Strategic Direction"
+                </p>
+              </div>
+            </div>
+
+            <div class="slide-collab slide slide-2">
+              <div>
+                <h3>"Collaboration for Executive Training Programs"</h3>
+                <img src="img/syscomp.jpeg" alt="SYSCOM" />
+                <p>"Partner for Training on PMI - Global Certifications"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-slides">
+            <div style="background-image: url(img/collab.jpg)"></div>
+
+            <div style="background-image: url(img/banner2.jpg)"></div>
+          </div>
+
+          <aside class="btn-container btn-container-sm slider-nav-btns">
+            <a href="#collab" class="reg-btn"> DHA SUFFA UNIVERSITY </a>
+            <a href="" class="reg-btn"> SYSCOM </a>
+          </aside>
+
+          <div class="buttons">
+            <button class="left-btn">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="right-btn">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <!--PRESENTATION SLIDER-->
+      <main class="main-slider">
+        <section class="slideshow">
+          <div class="slider-pres fade is-active">
+            <span class="slide-number">1 / 3</span>
+            <figure class="slide-image">
+              <img src="img/presentation/pre1.jpg" alt="Mountain" />
+              <figcaption>First Slide</figcaption>
+            </figure>
+          </div>
+
+          <div class="slider-pres fade">
+            <span class="slide-number">2 / 3</span>
+            <figure class="slide-image">
+              <img src="img/presentation/pre2.jpg" alt="Snow" />
+              <figcaption>Second Slide</figcaption>
+            </figure>
+          </div>
+
+          <div class="slider-pres fade">
+            <span class="slide-number">3 / 3</span>
+            <figure class="slide-image">
+              <img src="img/presentation/pre3.jpg" alt="Snow" />
+              <figcaption>Third Slide</figcaption>
+            </figure>
+          </div>
+
+          <div class="controls">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+
+          <div class="dots-container">
+            <span class="dot is-active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </section>
+      </main>
+
+      <!--VISION/MISSION/VALUES-->
+      <section class="vision-cards">
+        <div class="card">
+          <div class="ico">
+            <i class="fa fa-bullseye"></i>
+          </div>
+          <h3 class="title">Vision</h3>
+          <p>
+            Business success is achieved with Project management skills and
+            certifications that are pursued through talent management and
+            competence building of an organization for advancement in strategic
+            direction and sustainable growth under perpetual disruption.
+          </p>
+        </div>
+        <div class="card">
+          <div class="ico">
+            <i class="fa fa-eye"></i>
+          </div>
+          <h3 class="title">Mission</h3>
+          <p>
+            Promotion of awareness of the strengths of project management
+            concepts for adaptation by professionals, business and industry for
+            making way forward in disrupting business environment.
+          </p>
+        </div>
+        <div class="card">
+          <div class="ico">
+            <i class="fa fa-star"></i>
+          </div>
+          <h3 class="title">Values</h3>
+
+          <ul style="list-style: circle; text-align: justify">
+            <li>Work on High Moral Grounds</li>
+            <li>Respect for Human aspects</li>
+            <li>Create Coherence</li>
+            <li>Enhance Inter-relationship in Team</li>
+          </ul>
+        </div>
+      </section>
+
+      <!--FOOTER-->
+      <footer id="site-footer">
+        <section class="horizontal-footer-section" id="footer-top-section">
+          <p class="footer-slog">
+            The Power of Project Management Builds Organizational Competence for
+            Sustainable Excellence
+          </p>
+          <div id="footer-logo">
+            <img
+              src="img/logo.png"
+              alt="footer logo"
+              role="presentation"
+              width="100"
+            />
+          </div>
+        </section>
+
+        <section class="horizontal-footer-section" id="footer-middle-section">
+          <div id="footer-about" class="footer-columns footer-columns-large">
+            <h1>Contact us</h1>
+            <address>
+              <p>
+                <img
+                  src="https://img.icons8.com/ios-filled/14/eeeeee/phone.png"
+                />7 (800) 555–35–35
+              </p>
+              <p>
+                <img
+                  src="https://img.icons8.com/ios-filled/14/eeeeee/mail.png"
+                />noreply@reply.io
+              </p>
+            </address>
+          </div>
+          <div class="footer-columns">
+            <h1>Overview</h1>
+            <ul class="footer-column-menu" role="menu">
+              <li class="footer-column-menu-item" role="menuitem">
+                <a href="#" class="footer-column-menu-item-link">Services </a>
+              </li>
+              <li class="footer-column-menu-item" role="menuitem">
+                <a href="#" class="footer-column-menu-item-link"
+                  >Upcoming Events</a
+                >
+              </li>
+              <li class="footer-column-menu-item" role="menuitem">
+                <a href="#" class="footer-column-menu-item-link">Past Events</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-columns">
+            <h1>Information</h1>
+            <ul class="footer-column-menu" role="menu">
+              <li class="footer-column-menu-item" role="menuitem">
+                <a href="#" class="footer-column-menu-item-link">About Us</a>
+              </li>
+              <li class="footer-column-menu-item" role="menuitem">
+                <a href="#" class="footer-column-menu-item-link"
+                  >Privacy Policy</a
+                >
+              </li>
+
+              <li class="footer-column-menu-item" role="menuitem">
+                <a href="#" class="footer-column-menu-item-link">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="horizontal-footer-section" id="footer-bottom-section">
+          <div id="footer-copyright-info">
+            &copy;
+            <a href="https://giantssolutions.com" style="font-weight: bolder"
+              >Giants Solutions</a
+            >
+            2022. All rights reserved.
+          </div>
+          <div id="footer-social-buttons">
+            <a href="https://www.facebook.com/thepowerpm"
+              ><img
+                src="https://img.icons8.com/ios-filled/25/999999/facebook--v1.png"
+            /></a>
+            <img
+              src="https://img.icons8.com/ios-filled/25/999999/telegram-app.png"
+            />
+            <img
+              src="https://img.icons8.com/ios-filled/25/999999/pinterest--v1.png"
+            />
+            <img
+              src="https://img.icons8.com/ios-filled/25/999999/instagram--v1.png"
+            />
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <!--PRELOADER JAVASCRIPT-->
+    <script>
+      var loader = document.getElementById("items");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+    <!--EVENT REGISTRATION DROPDOWN BTN-->
+    <script src="js/btn-dropdown.js"></script>
+    <!--MODAL POPUP JS-->
+    <script src="js/modal.js"></script>
+    <!--CAROUSEL JS-->
+    <script src="js/carousel.js"></script>
+    <!--VIDEO CARD JS-->
+    <script>
+      const panels = document.querySelectorAll(".panel");
+
+      panels.forEach((panel) => {
+        panel.addEventListener("click", () => {
+          removeActiveClasses();
+          panel.classList.add("active");
+        });
+      });
+
+      const removeActiveClasses = () => {
+        panels.forEach((panel) => {
+          panel.classList.remove("active");
+        });
+      };
+    </script>
+
+    <script src="js/slider.js"></script>
+  </body>
+</html>
